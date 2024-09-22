@@ -4,8 +4,9 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
 app.use(cors({
-  origin: "bfhl-depl-client.vercel.app",
+  origin: "https://bfhl-depl-client.vercel.app",
   methods: "GET,POST",
+  credentials : true
 
 }));
 const port = process.env.PORT || 3000;
