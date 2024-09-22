@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 app.use(cors({
   origin: "https://bfhl-depl-client.vercel.app",
-  methods: "GET,POST",
+  methos: ["GET", "POST" , "PUT" , "DELETE" , "PATCH"], ,  
   credentials : true
 
 }));
