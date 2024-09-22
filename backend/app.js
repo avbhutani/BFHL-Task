@@ -16,7 +16,7 @@ const USER_ID = "Prakhar Pandey";
 const EMAIL = "pr6026@srmist.edu.in";
 const ROLL_NUMBER = "RA2111026010341";
 
-app.get(`/`, (req, res) => {
+app.get('/', (req, res) => {
   res.send("Hello World");
 })
 
