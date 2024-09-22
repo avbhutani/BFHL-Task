@@ -19,7 +19,7 @@ function App() {
     try {
       const parsedJson = JSON.parse(jsonInput);
       console.log('Parsed JSON:', parsedJson);
-      const res = await axios.post('http://localhost:3000/bfhl', parsedJson);
+      const res = await axios.post('https://bfhl-depl-backend.vercel.app/bfhl', parsedJson);
       setResponse(res.data);
       setTitle(res.data.roll_number);
       setLoading(false);
